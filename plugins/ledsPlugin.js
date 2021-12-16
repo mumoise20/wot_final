@@ -49,7 +49,7 @@ var greenLight= new Gpio(greenLightModel , 'out');
     redLightValue = 0;
     greenLightValue = 0;
     console.info("Both leds are off");
-    module.exports={redLightValue};
+    redLightValue.exports;
     greenLightValue.exports;
 };
 module.exports={switchOn,switchOff};
