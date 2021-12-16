@@ -1,7 +1,7 @@
 let httpServer = require('./servers/http'),
 resources = require('./resources/model'),
 pirPlugin = require('./plugins/pirPlugin');
-//ledsPlugin = require('./plugins/ledsPlugin');
+ledsPlugin = require('./plugins/ledsPlugin');
 
 
 const PORT = resources.pi.port;

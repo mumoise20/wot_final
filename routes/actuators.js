@@ -1,6 +1,7 @@
 let express = require('express'),
     router = express.Router(),
     resources = require('./../resources/model');
+    resources2 = require('./../plugins/ledsPlugin');
 
 router.route('/').get(function(req, res, next){
     res.send(resources.pi.actuators);
@@ -14,8 +15,16 @@ router.route('/leds/green').get(function(req, res, next){
     res.send(resources.pi.actuators.leds.green);
 });
 
-router.route('/leds.red').get(function(req, res, next){
+router.route('/leds/red').get(function(req, res, next){
     res.send(resources.pi.actuators.leds.red);
+});
+
+router.route('/leds/green/value').get(function(req, res, next){
+    res.send(resources2.value);
+});
+
+router.route('/leds/red/value').get(function(req, res, next){
+    res.send(resources.pi.actuators.leds.red.value);
 });
 
 router.route('/leds/:id').get(function (req, res, next) {
