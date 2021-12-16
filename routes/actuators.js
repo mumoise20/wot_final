@@ -20,11 +20,11 @@ router.route('/leds/red').get(function(req, res, next){
 });
 
 router.route('/leds/green/value').get(function(req, res, next){
-    res.send("0");
+    res.send(resources2);
 });
 
 router.route('/leds/red/value').get(function(req, res, next){
-    res.send("0");
+    res.send(resources2);
 });
 
 router.route('/leds/:id').get(function (req, res, next) {
