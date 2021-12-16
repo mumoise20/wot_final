@@ -11,7 +11,7 @@ app.use(cors());
 app.use('/pi/sensors', sensorRoutes);
 app.use('/pi/actuators', actuatorRoutes);
 app.get('/pi/', function(req, res){
-    res.send('WoT with DHT, LEDS, PIR');
+    res.send('WoT SIMPLE SECURITY SYSTEM with LEDS and PIR');
 });
 
 module.exports = app;

@@ -33,9 +33,7 @@ var greenLight= new Gpio(greenLightModel , 'out');
         redLight.writeSync(0);
 
         redLightValue = 0;
-        greenLightValue = 1;
-        
-    
+        greenLightValue = 1;  
     }
 };
 var switchOff=function(){
