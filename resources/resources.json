@@ -1,0 +1,29 @@
+{
+    "pi": {
+        "name": "Implement WOT",
+        "port": 1234,
+        "sensors" : {
+            "pir": {
+                "name": "Passive Infrared sensor",
+                "unit" : "",
+                "value": false,
+                "gpio": 17
+            }
+        },
+        "actuators": {
+            "leds": {
+                "green": {
+                    "name": "Green LED",
+                    "value": true,
+                    "gpio": 4
+
+                },
+                "red": {
+                    "name": "Red LED",
+                    "value": true,
+                    "gpio": 27
+                }
+            }
+        }
+    }
+}
